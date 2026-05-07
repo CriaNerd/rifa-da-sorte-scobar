@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Admin - Rifa do Escobar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container admin-page">
+    <section class="card">
+      <h1>Painel Admin</h1>
+      <p class="muted">Rifa do Escobar 00 da Serra</p>
+      <input id="adminPass" type="password" placeholder="Senha admin" />
+      <button class="primary" id="loadOrders">Carregar pedidos</button>
+      <a href="/" class="pay-link">Voltar para campanha</a>
+    </section>
+
+    <section class="card">
+      <h2>Sorteio administrativo</h2>
+      <div class="form-grid">
+        <input id="prizeName" placeholder="Ex: PIX R$ 500, PIX R$ 1.000 ou BMW F800 GS 2015" />
+        <button class="primary" id="drawBtn">Sortear entre pagos</button>
+      </div>
+      <div id="drawResult" class="result hidden"></div>
+    </section>
+
+    <section class="card">
+      <h2>Pedidos</h2>
+      <div id="orders"></div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

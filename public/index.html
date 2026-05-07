@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rifa da Sorte Scobar 00 da Serra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top-menu">
+    <a class="menu-btn active" href="#inicio">⌂ Início</a>
+    <button class="menu-btn" id="buyerAreaBtn" type="button">👤 Área do comprador</button>
+  </header>
+
+  <main class="site">
+    <section class="hero-final" id="inicio">
+      <img src="assets/hero-final-premium.png" alt="Rifa da Sorte Scobar 00 da Serra - BMW F800 GS Adventure 2015">
+    </section>
+
+    <section class="buyer-callout">
+      <div>
+        <h2>Já comprou seus números?</h2>
+        <p>Entre na Área do Comprador para acompanhar seus pedidos, conferir números reservados e voltar para comprar mais em poucos cliques.</p>
+      </div>
+      <button class="gold-outline" id="buyerAreaBtn2" type="button">Acessar meus pedidos</button>
+    </section>
+
+    <section class="progress-card">
+      <div>
+        <h2>Acompanhamento da ação</h2>
+        <span>Ação em andamento</span>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar"><div id="progressFill"></div></div>
+        <strong id="progressText">0%</strong>
+      </div>
+      <div class="progress-details">
+        <span>🎟️ Números vendidos: <b id="soldNumbers">0</b></span>
+        <span>👥 Total de números: <b id="totalNumbers">300.000</b></span>
+      </div>
+    </section>
+
+    <section class="prize-section" id="premios">
+      <h2>Prêmios</h2>
+
+      <div class="prize-grid">
+        <article class="prize-card" id="goal1-card">
+          <small>1º Prêmio</small>
+          <span>Pix</span>
+          <strong>R$ 500</strong>
+          <img src="assets/cash-premium.svg" alt="Pix R$ 500">
+          <em id="goal1">Em andamento</em>
+          <p>Pagamento via Pix rápido, seguro e direto para o contemplado.</p>
+        </article>
+
+        <article class="prize-card" id="goal2-card">
+          <small>2º Prêmio</small>
+          <span>Pix</span>
+          <strong>R$ 500</strong>
+          <img src="assets/cash-premium.svg" alt="Pix R$ 500">
+          <em id="goal2">Em andamento</em>
+          <p>Pagamento via Pix rápido, seguro e direto para o contemplado.</p>
+        </article>
+
+        <article class="prize-card" id="goal3-card">
+          <small>3º Prêmio</small>
+          <span>Pix</span>
+          <strong>R$ 500</strong>
+          <img src="assets/cash-premium.svg" alt="Pix R$ 500">
+          <em id="goal3">Em andamento</em>
+          <p>Pagamento via Pix rápido, seguro e direto para o contemplado.</p>
+        </article>
+
+        <article class="prize-card" id="goal4-card">
+          <small>4º Prêmio</small>
+          <span>Pix</span>
+          <strong>R$ 1.000</strong>
+          <img src="assets/cash-premium.svg" alt="Pix R$ 1.000">
+          <em id="goal4">Em andamento</em>
+          <p>Pagamento via Pix rápido, seguro e direto para o contemplado.</p>
+        </article>
+
+        <article class="prize-card final-card" id="goal5-card">
+          <small>Prêmio final</small>
+          <div class="mini-bike">
+            <img src="assets/bmw-card-premio.png" alt="BMW F800 GS Adventure 2015">
+          </div>
+          <strong>BMW F800 GS Adventure 2015</strong>
+          <em id="goal5">Aguardando conclusão da ação</em>
+        </article>
+      </div>
+
+      <p class="section-note">ⓘ Os prêmios serão entregues assim que forem desbloqueados durante o andamento da ação.</p>
+    </section>
+
+    <section class="purchase-section" id="comprar">
+      <section class="numbers-box">
+        <div class="box-head">
+          <div>
+            <h2>Escolha seus números</h2>
+            <p>Selecione no mínimo 20 números para continuar</p>
+          </div>
+          <div class="legend-row">
+            <span><i class="free"></i>Disponível</span>
+            <span><i class="selected"></i>Selecionado</span>
+            <span><i class="blocked"></i>Indisponível</span>
+          </div>
+        </div>
+
+        <div class="number-actions-top">
+          <button data-qty="20">+20</button>
+          <button data-qty="50">+50</button>
+          <button data-qty="100">+100</button>
+          <button data-qty="500">+500</button>
+          <button data-qty="1000">+1000</button>
+        </div>
+
+        <label>Quantidade</label>
+        <input type="number" id="quantity" min="20" value="20" />
+
+        <div class="number-grid-preview">
+          <span>1</span><span class="on">2</span><span>3</span><span>4</span><span>5</span><span>6</span><span class="on">7</span><span>8</span><span>9</span><span class="dark">10</span>
+          <span>11</span><span class="on">12</span><span>13</span><span>14</span><span>15</span><span>16</span><span>17</span><span class="on">18</span><span>19</span><span class="on">20</span>
+          <span>21</span><span>22</span><span class="on">23</span><span class="dark">24</span><span>25</span><span>26</span><span class="on">27</span><span>28</span><span>29</span><span>30</span>
+          <span class="on">31</span><span>32</span><span>33</span><span>34</span><span>35</span><span class="on">36</span><span>37</span><span>38</span><span>39</span><span>40</span>
+          <span>41</span><span>42</span><span>43</span><span>44</span><span class="on">45</span><span>46</span><span>47</span><span>48</span><span>49</span><span>50</span>
+        </div>
+      </section>
+
+      <section class="checkout-box">
+        <h2>Resumo da compra</h2>
+
+        <div class="summary-line">
+          <span>Números selecionados</span>
+          <strong id="selectedQty">20</strong>
+        </div>
+
+        <div class="summary-line">
+          <span>Valor por número</span>
+          <strong id="unitPrice">R$ 0,50</strong>
+        </div>
+
+        <div class="summary-line total">
+          <span>Total a pagar</span>
+          <strong id="totalPrice">R$ 10,00</strong>
+        </div>
+
+        <div class="form-grid">
+          <input id="customerName" placeholder="Nome completo">
+          <input id="phone" placeholder="WhatsApp com DDD">
+          <input id="email" placeholder="E-mail">
+          <input id="cpf" placeholder="CPF">
+          <input id="customerPassword" type="password" placeholder="Crie uma senha para acompanhar seus pedidos">
+        </div>
+
+        <button id="buyBtn" class="pix-button">▦ Gerar Pix e pagar</button>
+        <p class="safe-line">🛡️ Pagamento 100% seguro via Pix</p>
+
+        <div id="result" class="result hidden"></div>
+      </section>
+    </section>
+
+    <section class="bottom-info">
+      <div><b>🎫 Sorteio</b><span>Pela Loteria Federal assim que atingir cada prêmio</span></div>
+      <div><b>📸 Divulgação</b><span>Ao vivo no Instagram @rifadasorte.scobar00</span></div>
+      <div><b>💬 Atendimento</b><span>WhatsApp</span></div>
+      <div><b>❔ Dúvidas</b><span>Clique aqui e fale conosco</span></div>
+    </section>
+
+    <section class="legal" id="regulamento">
+      Este bilhete de loteria está autorizado com base no termo de autorização descrito no regulamento da promoção. Antes de contratar, consulte o Regulamento do produto. É proibida a venda para menores de 18 anos. Os sorteios e entrega dos prémios serão realizados de acordo com os critérios estabelecidos neste site, nos termos seguintes: O adquirente concorrerá em todos os sorteios previstos no bilhete digital emitido, mesmo sendo contemplado em alguns deles. Ao contribuir, o titular do BILHETE Digital concorda desde já e sem ônus a utilização de seu nome, sua voz e imagem para a divulgação desta campanha social. Confira o resultado dos sorteios e as condições de participação.
+    </section>
+  </main>
+
+  <div class="modal hidden" id="buyerModal">
+    <div class="modal-card">
+      <button class="close-modal" id="closeBuyerModal" type="button">×</button>
+
+      <div class="buyer-hero">
+        <h2>Área do comprador</h2>
+        <p>Acompanhe seus números, veja o status do pagamento e continue participando com mais chances.</p>
+      </div>
+
+      <div class="buyer-login">
+        <input id="buyerPhone" placeholder="WhatsApp usado na compra">
+        <input id="buyerPassword" type="password" placeholder="Senha cadastrada na compra">
+        <button id="buyerLoginBtn" class="pix-button" type="button">Entrar e ver meus pedidos</button>
+      </div>
+
+      <div id="buyerResult" class="buyer-result"></div>
+
+      <div class="buyer-cta">
+        <strong>Quer aumentar suas chances?</strong>
+        <span>Escolha mais números sem perder tempo: a compra fica logo abaixo.</span>
+        <a href="#comprar" id="buyMoreBtn">Comprar mais números</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

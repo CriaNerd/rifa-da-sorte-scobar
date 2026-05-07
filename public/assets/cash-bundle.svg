@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="260" viewBox="0 0 360 260">
+<defs>
+<linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#fff8d7"/>
+<stop offset=".45" stop-color="#d8ca78"/>
+<stop offset="1" stop-color="#807533"/>
+</linearGradient>
+<linearGradient id="strap" x1="0" x2="1">
+<stop offset="0" stop-color="#ffd75d"/>
+<stop offset="1" stop-color="#f0a800"/>
+</linearGradient>
+<filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+<feDropShadow dx="0" dy="18" stdDeviation="14" flood-color="#000" flood-opacity=".55"/>
+</filter>
+</defs>
+<g filter="url(#shadow)">
+<g transform="translate(42 78) rotate(-5)">
+<rect x="0" y="34" width="250" height="96" rx="12" fill="#756b2e" opacity=".55"/>
+<rect x="8" y="22" width="250" height="96" rx="12" fill="#9d9044"/>
+<rect x="16" y="10" width="250" height="96" rx="12" fill="url(#paper)" stroke="#fff2a8" stroke-width="4"/>
+<rect x="36" y="28" width="210" height="60" rx="8" fill="none" stroke="#527143" stroke-width="4" opacity=".75"/>
+<circle cx="142" cy="58" r="27" fill="#b7a653" opacity=".75"/>
+<text x="142" y="70" text-anchor="middle" font-family="Arial Black, Arial" font-size="34" fill="#2d3c21">$</text>
+<rect x="65" y="47" width="150" height="32" rx="6" fill="url(#strap)" transform="rotate(-7 140 63)"/>
+</g>
+</g>
+</svg>
